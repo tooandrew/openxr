@@ -331,8 +331,54 @@ If enabled then the character turns lower body to the direction of movement. Upp
 
 This setting can be controlled in Advanced tab of the launcher.
 
+smooth movement
+---------------
+
+:Type:		boolean
+:Range:		True/False
+:Default:	False
+
+Makes NPCs and player movement more smooth.
+
+Recommended to use with "turn to movement direction" enabled.
+
+This setting can be controlled in Advanced tab of the launcher.
+
+smooth movement player turning delay
+------------------------------------
+
+:Type:		floating point
+:Range:		>= 0.01
+:Default:	0.333
+
+Max delay of turning (in seconds) if player drastically changes direction on the run. Makes sense only if "smooth movement" is enabled.
+
+This setting can only be configured by editing the settings configuration file.
+
+NPCs avoid collisions
+---------------------
+
+:Type:		boolean
+:Range:		True/False
+:Default:	False
+
+If enabled NPCs apply evasion maneuver to avoid collisions with others.
+
+This setting can be controlled in Advanced tab of the launcher.
+
+NPCs give way
+-------------
+
+:Type:		boolean
+:Range:		True/False
+:Default:	True
+
+Standing NPCs give way to moving ones. Works only if 'NPCs avoid collisions' is enabled.
+
+This setting can only be configured by editing the settings configuration file.
+
 swim upward correction
-----------------
+----------------------
 
 :Type:		boolean
 :Range:		True/False
@@ -382,3 +428,14 @@ even if the fighting NPC is knocked out.
 This setting allows the player to steal items from fighting NPCs that were knocked out if enabled.
 
 This setting can be controlled in Advanced tab of the launcher.
+
+graphic herbalism
+-----------------
+
+:Type:      boolean
+:Range:		True/False
+:Default:	True
+
+Some mods add harvestable container models. When this setting is enabled, activating a container using a harvestable model will visually harvest from it instead of opening the menu.
+
+When this setting is turned off or when activating a regular container, the menu will open as usual.
